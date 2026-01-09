@@ -3,6 +3,15 @@
 `k8s-ai-bench` is a benchmark for assessing the performance of LLM models for kubernetes related tasks.
 
 
+### Leaderboard
+
+If you're looking for the results of the latest runs, they available on the [k8s-ai-bench Leaderboard](https://gke-labs.github.io/k8s-ai-bench/). 
+It shows run results for widely used proprietary and open models over a few run types: 
+
+* Pass@1 -- useful as a snapshot to see raw capability of a model relative to tasks in Kubernetes
+* Pass@5 -- a broader metric which sees if models can eventually come by a correct solution.
+* Pass All 5 -- a metric we equate with base level capability of a model for these tasks. We are evaluating this because we feel it is especially important in the context of eventual autonomous usage.
+
 ### Usage
 
 ```sh
