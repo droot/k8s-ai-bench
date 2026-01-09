@@ -15,7 +15,7 @@
 			<a href="index.html" class="nav-btn">Leaderboard</a>
 			<a href="tasks.html" class="nav-btn active">Tasks</a>
 			<a href="about.html" class="nav-btn">About</a>
-			<a href="https://github.com/GoogleCloudPlatform/kubectl-ai" class="nav-btn" target="_blank">GitHub &nearr;</a>
+			<a href="https://github.com/gke-labs/k8s-ai-bench" class="nav-btn" target="_blank">GitHub &nearr;</a>
 		</div>
 	</nav>
 	<div class="container">
@@ -38,7 +38,7 @@
 			window.renderPage = function() {
 				if(!window.PROCESSED_DATA) return;
 				const tbody = document.querySelector('#tasks-table tbody');
-				const repoUrl = "https://github.com/GoogleCloudPlatform/kubectl-ai/tree/main/k8s-ai-bench/tasks/";
+				const repoUrl = "https://github.com/gke-labs/k8s-ai-bench/tree/main/tasks/";
 				tbody.innerHTML = window.PROCESSED_DATA.tasks.map(t => {
 					return '<tr><td><a href="'+repoUrl+encodeURIComponent(t.name)+'" class="task-link" target="_blank"><strong>'+t.name+'</strong> &nearr;</a></td>' +
 						   '<td>'+t.p1+'% '+createMiniBar(t.p1, getHue(t.p1))+'</td>' +
